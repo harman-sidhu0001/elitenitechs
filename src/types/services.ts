@@ -3,13 +3,15 @@
  * Defines the structure for multi-service platform offerings
  */
 
-export enum ServiceCategory {
-  WEB_DEVELOPMENT = 'web',
-  SOFTWARE_DEVELOPMENT = 'software',
-  AI_AGENTS = 'ai',
-  MARKETING = 'marketing',
-  SOCIAL_MEDIA = 'social',
-}
+export const ServiceCategory = {
+  WEB_DEVELOPMENT: 'web',
+  SOFTWARE_DEVELOPMENT: 'software',
+  AI_AGENTS: 'ai',
+  MARKETING: 'marketing',
+  SOCIAL_MEDIA: 'social',
+} as const;
+
+export type ServiceCategory = (typeof ServiceCategory)[keyof typeof ServiceCategory];
 
 export interface Service {
   id: string;

@@ -7,7 +7,6 @@ const SEO: React.FC<SEOProps> = ({
   keywords,
   image,
   url,
-  children,
 }) => {
   const fullTitle = title.includes('Elite Nitechs') 
     ? title 

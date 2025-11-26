@@ -24,7 +24,7 @@ const initialState: UIState = {
 
 export const useUIStore = create<UIStore>()(
   devtools(
-    subscribeWithSelector((set, get) => ({
+    subscribeWithSelector((set) => ({
       ...initialState,
 
       // Scroll state

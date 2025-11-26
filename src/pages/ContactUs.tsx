@@ -12,7 +12,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Navbar } from "../components/layout";
-import Footer from "../components/Footer";
 import { AnimatedWhiteDot } from "../common/WhiteDot";
 
 interface FormData {
