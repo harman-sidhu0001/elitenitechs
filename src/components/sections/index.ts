@@ -1,0 +1,9 @@
+export { default as HeroSection } from './HeroSection';
+export { default as StatsSection } from './StatsSection';
+export { default as TestimonialsSection } from './TestimonialsSection';
+export { default as WhyChooseEliteSection } from './WhyChooseEliteSection';
+export { default as FeaturedProjectsSection } from './FeaturedProjectsSection';
+export { default as ServicesOverviewSection } from './ServicesOverviewSection';
+export { default as SoftwareDevelopmentSection } from './SoftwareDevelopmentSection';
+export { default as AIAgentSection } from './AIAgentSection';
+export { default as MarketingSection } from './MarketingSection';
