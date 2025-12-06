@@ -4,6 +4,7 @@
  */
 
 import { memo } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { aiAgentServices } from '../../data/services';
 import * as FaIcons from 'react-icons/fa';
@@ -137,15 +138,15 @@ const AIAgentSection = memo(() => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <a
-            href="/contact-us"
+          <Link
+            to="/contact-us"
             className="inline-flex items-center gap-3 px-8 py-4 bg-primary-500 text-black font-semibold rounded-2xl hover:bg-primary-600 transition-all duration-300 hover:scale-105"
           >
             Explore AI Solutions
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

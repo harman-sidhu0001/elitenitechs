@@ -4,6 +4,7 @@
  */
 
 import { memo } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaFacebook, FaGoogle, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import { marketingServices } from '../../data/services';
@@ -86,15 +87,15 @@ const MarketingSection = memo(() => {
           <p className="text-gray-400 mb-6">
             Ready to grow your business with strategic digital marketing?
           </p>
-          <a
-            href="/contact-us"
+          <Link
+            to="/contact-us"
             className="inline-flex items-center gap-3 px-8 py-4 bg-primary-500 text-black font-semibold rounded-2xl hover:bg-primary-600 transition-all duration-300 hover:scale-105"
           >
             Start Marketing Campaign
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
